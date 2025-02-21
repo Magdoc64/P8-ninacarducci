@@ -147,7 +147,8 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	/*ajout de la taille de la police pour correspondre au changement de titre en p*/
+	font-size: 2.5rem;
 }
 .quote__author {
 	font-family: Spectral;
@@ -203,7 +204,8 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #BEB45A;
+	/*Modification de la couleur pour améliorer le contraste*/
+	background-color: #423F1A;
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -240,7 +242,8 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
+	/*Modification de la couleur pour améliorer le contraste*/
+	background-color: #423F1A;
 	padding: .5em 1em
 }
 
