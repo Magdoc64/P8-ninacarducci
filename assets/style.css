@@ -193,7 +193,7 @@ body {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #E8E5CA ;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -244,7 +244,7 @@ form textarea {
 input[type="submit"] {
 	/*Modification de la couleur pour améliorer le contraste*/
 	background-color: #423F1A;
-	color: #D8D3A8;
+	color: #E8E5CA;
 	padding: .5em 1em
 }
 
