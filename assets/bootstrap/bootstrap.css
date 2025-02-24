@@ -372,6 +372,8 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  /*ajout de propriété standard pour des soucis de compatibilité*/
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -430,6 +432,8 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  /*ajout de propriété standard pour des soucis de compatibilité*/
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -2479,7 +2483,8 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /*ajout de propriété standard pour des soucis de compatibilité*/
+  print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -6056,7 +6061,7 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6071,7 +6076,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carousel-control-prev {
@@ -6085,8 +6090,8 @@ textarea.form-control-lg {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
