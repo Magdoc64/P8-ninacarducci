@@ -39,7 +39,7 @@
 <main>
 	<!--Ajout de section en remplacement des div pour structurer le contenu-->
 	<!--Conversion des formats png et jpg en webp-->
-	<!--Redimensionnement des photos du slider en 2048-->
+	<!--Redimensionnement des photos du slider avec ajout d'un srcset selon la taille de l'écran-->
 	<section id="header">
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -53,16 +53,28 @@
 					<!--Ajout d'une priorité haute sur l'image affichée-->
 					<img fetchpriority="high" 
 					src="./assets/images/slider/ryoji-iwata-1280.webp" 
+					srcset="./assets/images/slider/ryoji-iwata-1280.webp 1280w, 
+					./assets/images/slider/ryoji-iwata-2048.webp 2048w"
 					class="d-block w-100" 
 					alt="vue de haut d'un homme traversant un passage piéton">
 				</div>
 				<div class="carousel-item">
 					<!--Ajout d'une priorité basse sur les images masquées à l'affichage-->
-					<img fetchpriority="low" src="./assets/images/slider/nicholas-green-1280.webp" class="d-block w-100" alt="vue de face d'un public lors d'un concert">
+					<img fetchpriority="low" 
+					src="./assets/images/slider/nicholas-green-1280.webp"
+					srcset="./assets/images/slider/nicholas-green-1280.webp 1280w, 
+					./assets/images/slider/nicholas-green-2048.webp 2048w" 
+					class="d-block w-100" 
+					alt="vue de face d'un public lors d'un concert">
 				</div>
 				<div class="carousel-item">
 					<!--Ajout d'une priorité basse sur les images masquées à l'affichage-->
-					<img fetchpriority="low" src="./assets/images/slider/edward-cisneros-1280.webp" class="d-block w-100" alt="gros plan sur des jeunes mariés s'embrassant">
+					<img fetchpriority="low" 
+					src="./assets/images/slider/edward-cisneros-1280.webp" 
+					srcset="./assets/images/slider/edward-cisneros-1280.webp 1280w,
+					./assets/images/slider/edward-cisneros-2048.webp 2048w"
+					class="d-block w-100" 
+					alt="gros plan sur des jeunes mariés s'embrassant">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
