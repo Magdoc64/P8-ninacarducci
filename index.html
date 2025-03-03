@@ -57,7 +57,10 @@
 					./assets/images/slider/ryoji-iwata-1280.webp 1280w,
 					./assets/images/slider/ryoji-iwata-1560.webp 1560w, 
 					./assets/images/slider/ryoji-iwata-1920.webp 1920w"
-					sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+					sizes="(max-width: 720px) 720px, 
+					(max-width: 1280px) 1280px,
+					(max-width: 1560px) 1560px,
+					1920px"
 					class="d-block w-100" 
 					alt="vue de haut d'un homme traversant un passage piéton">
 				</div>
@@ -69,7 +72,10 @@
 					./assets/images/slider/nicholas-green-1280.webp 1280w,
 					./assets/images/slider/nicholas-green-1560.webp 1560w, 
 					./assets/images/slider/nicholas-green-1920.webp 1920w" 
-					sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+					sizes="(max-width: 720px) 720px, 
+					(max-width: 1280px) 1280px,
+					(max-width: 1560px) 1560px,
+					1920px"
 					class="d-block w-100" 
 					alt="vue de face d'un public lors d'un concert">
 				</div>
@@ -81,7 +87,10 @@
 					./assets/images/slider/edward-cisneros-1280.webp 1280w,
 					./assets/images/slider/edward-cisneros-1560.webp 1560w,
 					./assets/images/slider/edward-cisneros-1920.webp 1920w"
-					sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+					sizes="(max-width: 720px) 720px, 
+					(max-width: 1280px) 1280px,
+					(max-width: 1560px) 1560px,
+					1920px"
 					class="d-block w-100" 
 					alt="gros plan sur des jeunes mariés s'embrassant">
 				</div>
@@ -99,7 +108,12 @@
 
 	<section id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp" alt="photo de Nina Carducci">
+			<img 
+				src="./assets/images/nina-300.webp" 
+				alt="photo de Nina Carducci"
+				srcset="./assets/images/nina-300.webp 300w,
+				./assets/images/nina-456.webp 456w"
+				sizes="(max-width: 300px) 300px, 456px">
 		</div>
 		<!--Modification de la div en article pour mieux correspondre au contenu-->
 		<article id="about-me">
@@ -116,15 +130,123 @@
 		<h2 class="title">Portfolio</h3>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="vue de la scène d'un concert depuis la fosse"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photo d'Ali Morshedlou"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photo de Jason Goodman"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="gros plan sur les mains qui se rejoignent d'un couple de mariés"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portrait d'Ade Tunji"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photo d'un couple de mariés devant un palmier"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de Nino Van Prattenburg"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="gros plan en contre plongé du chanteur Austin Neil"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="gros plan sur une avocate en train de rire"/>
+				<img 
+					data-gallery-tag="Concert" 
+					class="gallery-item" 
+					src="./assets/images/gallery/concerts/aaron-paul-240.webp" 
+					alt="vue de la scène d'un concert depuis la fosse"
+					srcset="./assets/images/gallery/concerts/aaron-paul-240.webp 240w,
+						./assets/images/gallery/concerts/aaron-paul-319.webp 319w,
+						./assets/images/gallery/concerts/aaron-paul-400.webp 400w,
+						./assets/images/gallery/concerts/aaron-paul-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Entreprises" 
+					class="gallery-item" 
+					src="./assets/images/gallery/entreprise/ali-morshedlou-240.webp" 
+					alt="photo d'Ali Morshedlou"
+					srcset="./assets/images/gallery/entreprise/ali-morshedlou-240.webp 240w,
+						./assets/images/gallery/entreprise/ali-morshedlou-319.webp 319w,
+						./assets/images/gallery/entreprise/ali-morshedlou-400.webp 400w,
+						./assets/images/gallery/entreprise/ali-morshedlou-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Entreprises" 
+					class="gallery-item" 
+					src="./assets/images/gallery/entreprise/jason-goodman-240.webp" 
+					alt="photo de Jason Goodman"
+					srcset="./assets/images/gallery/entreprise/jason-goodman-240.webp 240w,
+						./assets/images/gallery/entreprise/jason-goodman-319.webp 319w,
+						./assets/images/gallery/entreprise/jason-goodman-400.webp 400w,
+						./assets/images/gallery/entreprise/jason-goodman-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Mariages" 
+					class="gallery-item" 
+					src="./assets/images/gallery/mariage/hannah-busing-240.webp" 
+					alt="gros plan sur les mains qui se rejoignent d'un couple de mariés"
+					srcset="./assets/images/gallery/mariage/hannah-busing-240.webp 240w,
+						./assets/images/gallery/mariage/hannah-busing-319.webp 319w,
+						./assets/images/gallery/mariage/hannah-busing-400.webp 400w,
+						./assets/images/gallery/mariage/hannah-busing-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Portrait" 
+					class="gallery-item" 
+					src="./assets/images/gallery/portraits/ade-tunji-240.webp" 
+					alt="portrait d'Ade Tunji"
+					srcset="./assets/images/gallery/portraits/ade-tunji-240.webp 240w,
+						./assets/images/gallery/portraits/ade-tunji-319.webp 319w,
+						./assets/images/gallery/portraits/ade-tunji-400.webp 400w,
+						./assets/images/gallery/portraits/ade-tunji-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Mariages" 
+					class="gallery-item" 
+					src="./assets/images/gallery/mariage/jakob-owens-240.webp" 
+					alt="photo d'un couple de mariés devant un palmier"
+					srcset="./assets/images/gallery/mariage/jakob-owens-240.webp 240w,
+						./assets/images/gallery/mariage/jakob-owens-319.webp 319w,
+						./assets/images/gallery/mariage/jakob-owens-400.webp 400w,
+						./assets/images/gallery/mariage/jakob-owens-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Portrait" 
+					class="gallery-item" 
+					src="./assets/images/gallery/portraits/nino-van-prattenburg-240.webp" 
+					alt="portrait de Nino Van Prattenburg"
+					srcset="./assets/images/gallery/portraits/nino-van-prattenburg-240.webp 240w,
+						./assets/images/gallery/portraits/nino-van-prattenburg-319.webp 319w,
+						./assets/images/gallery/portraits/nino-van-prattenburg-400.webp 400w,
+						./assets/images/gallery/portraits/nino-van-prattenburg-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Concert" 
+					class="gallery-item" 
+					src="./assets/images/gallery/concerts/austin-neill-240.webp" 
+					alt="gros plan en contre plongé du chanteur Austin Neil"
+					srcset="./assets/images/gallery/concerts/austin-neill-240.webp 240w,
+						./assets/images/gallery/concerts/austin-neill-319.webp 319w,
+						./assets/images/gallery/concerts/austin-neill-400.webp 400w,
+						./assets/images/gallery/concerts/austin-neill-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
+				<img 
+					data-gallery-tag="Entreprises" 
+					class="gallery-item" 
+					src="./assets/images/gallery/entreprise/mateus-campos-felipe-240.webp" 
+					alt="gros plan sur une avocate en train de rire"
+					srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-240.webp 240w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-319.webp 319w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-400.webp 400w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-580.webp 580w"
+					sizes="(max-width: 240px) 240px, 
+						(max-width: 319px) 319px,
+						(max-width: 400px) 400px,
+						580px">
 			</div>
 		</div>
 		<!--Suppression d'une div inutile-->
@@ -201,7 +323,17 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="photo d'un appareil photo">
+			<img 
+			src="./assets/images/camera-172.webp" 
+			alt="photo d'un appareil photo"
+			srcset="./assets/images/camera-172.webp 172w,
+			./assets/images/camera-230.webp 230w,
+			./assets/images/camera-348.webp 348w,
+			./assets/images/camera-500.webp 500w"
+			sizes="(max-width: 172px) 172px, 
+				(max-width: 230px) 230px,
+				(max-width: 348px) 348px,
+				500px">
 		</div>
 	</div>
 </footer>
