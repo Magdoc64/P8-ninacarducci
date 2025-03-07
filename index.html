@@ -40,8 +40,7 @@
 <header class="top-header">
 	<!--Remplacement du h3 par du h1 pour respecter la hiérarchie des titres-->
 	<!--Ajout des microdonnées avec Schema.org-->
-	<div itemscope itemtype = "https://schema.org/Service">
-		<meta itemprop = "serviceType" content = "Photographe">
+	<div itemprop="author" itemscope itemtype="https://schema.org/Person">
 		<h1 class="name" itemprop = "name">Nina Carducci</h1>
 	</div>
 	<!--Remplacement de la div par une nav-->
@@ -279,8 +278,8 @@
 		<h2 class="title">Mes services</h2>
 		<div class="container" itemprop = "hasOfferCatalog" itemscope itemtype = "https://schema.org/OfferCatalog">
 			<!--Modification des div en article pour préciser le contenu-->
-			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/OfferCatalog">
-				<div class="service__description" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Service">
+			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Offer">
+				<div class="service__description" itemprop = "itemOffered" itemscope itemtype = "https://schema.org/Service">
 					<h3 itemprop = "name">Shooting photo</h3>
 					<p itemprop = "description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
@@ -289,8 +288,8 @@
 					<span itemprop = "description">Matériel, déplacement inclus</span>
 				</div>
 			</article>
-			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/OfferCatalog">
-				<div class="service__description" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Service">
+			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Offer">
+				<div class="service__description" itemprop = "itemOffered" itemscope itemtype = "https://schema.org/Service">
 					<h3 itemprop = "name">Retouches</h3>
 					<p itemprop = "description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
@@ -299,8 +298,8 @@
 					<span itemprop = "description">2 AR par photo</span>
 				</div>
 			</article>
-			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/OfferCatalog">
-				<div class="service__description" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Service">
+			<article class="service" itemprop = "itemListElement" itemscope itemtype = "https://schema.org/Offer">
+				<div class="service__description" itemprop = "itemOffered" itemscope itemtype = "https://schema.org/Service">
 					<h3 itemprop = "name">Album photos</h3>
 					<p itemprop = "description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
@@ -338,15 +337,18 @@
 				<input type="submit" value="Envoyer"/>
 			</form>
 			<!--Ajout des coordonnées enrichies par les microdonnées avec Schema.org-->
-			<div>
-				<p>Joignable au 
-					<span itemprop="téléphone">05 56 67 78 89</span> 
+			<div itemscope itemtype = "https://schema.org/ProfessionalService">
+				<meta itemprop = "additionalType" content = "Photographe">
+				<p>
+					<span itemprop = "name">Nina Carducci</span>
+					est joignable au 
+					<span itemprop="telephone">05 56 67 78 89</span> 
 					<meta itemprop = "openingHours" content = "lun-ven 10h00-19h00">du lundi au vendredi de 10h à 19h
 				</p>
-				<p itemprop="adresse" itemscope itemtype="https://schema.org/PostalAddress">
+				<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 					<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span> 
 					<span itemprop="postalCode">33200</span> 
-					<span itemprop="adresseLocalité">Bordeaux</span>
+					<span itemprop="addressLocality">Bordeaux</span>
 				</p>
 			</div>
 		</div>
